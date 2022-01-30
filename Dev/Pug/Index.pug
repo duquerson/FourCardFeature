@@ -1,0 +1,21 @@
+include Componentes/Bases.pug
+doctype html
+html(lang='es')
+    include Componentes/Heads.pug
+    body
+        main.Contenedor
+            header.Contenedor__Titulos
+                //- escape de etiquetas html dentro de otras en variables
+                h1 !{Titulo}  
+                p=Parrafo
+            section.Contendor__Tarjetas
+                div.Tarjeta(class='Tarjeta--1')
+                    +Tarjeta(TituloTarjeta[0],ParrafoTarjeta[0],ImagenTarjeta[0])
+                div.Tarjeta(class='Tarjeta--2')
+                    +Tarjeta(TituloTarjeta[1],ParrafoTarjeta[1],ImagenTarjeta[1])
+                div.Tarjeta(class='Tarjeta--3')
+                    +Tarjeta(TituloTarjeta[2],ParrafoTarjeta[2],ImagenTarjeta[2])
+                div.Tarjeta(class='Tarjeta--4')
+                    +Tarjeta(TituloTarjeta[3],ParrafoTarjeta[3],ImagenTarjeta[3])   
+            include Componentes/footers.pug
+            

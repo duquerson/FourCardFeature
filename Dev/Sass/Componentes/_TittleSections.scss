@@ -1,0 +1,31 @@
+.Contenedor__Titulos {
+    text-align: center;
+    padding: 0 4rem;
+    
+    h1 {
+        margin: 0 0 1.9rem 0;
+        line-height: 1.5;
+        font-weight: 200;
+        color: var(--Color_Very_Dark_Blue);
+    }
+
+    p {
+        margin: 0;
+        font-weight: 400;
+        color: var(--Color_Grayish_Blue);
+    }
+}
+@media screen and (min-width: 575px){
+
+    .Contenedor__Titulos {
+        width: 50.6rem; 
+        height: 15.8rem;
+    
+    h1 {
+        padding: 0 3rem;
+    }
+    
+    }
+
+
+}

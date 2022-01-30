@@ -1,0 +1,18 @@
+-var Titulo = "Reliable, efficient delivery <strong> Powered by Technology </strong>"
+-var Parrafo = "Our Artificial Intelligence powered tools use millions of project data points to ensure that your projects is successful"
+-var TituloTarjeta = ["Supervisor", "Team Builder", "Karma", "Calculator"]
+-var ParrafoTarjeta = ["Monitors activity to identify project roadblocks", "Scans our talent network to create the optimal team for yout project", "Regularly evaluates our talent to ensure quality", "Uses data from past projects to provide better delivery estimates"]
+-var ImagenTarjeta = ["icon-supervisor.svg", "icon-team-builder.svg", "icon-karma.svg", "icon-calculator.svg"]
+mixin Css
+    title Four_Card_Fearture | Frontend Mentor
+    link(rel='shortcut icon' href='./Public/Img/favicon-32x32.png' type='image/x-icon')
+    //- link(rel="stylesheet" href="../Css/Normalize.css")
+    link(rel='stylesheet' href='./Public/Css/Styles.css')
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet")
+
+mixin Tarjeta(TituloTarjeta, ParrafoTarjeta, ImagenTarjeta)
+    h2=TituloTarjeta
+    p "#{ParrafoTarjeta}"
+    img(src='./Public/Img/'+ImagenTarjeta alt='Photo of Objects')

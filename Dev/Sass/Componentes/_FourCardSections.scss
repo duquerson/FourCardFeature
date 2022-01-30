@@ -1,0 +1,95 @@
+
+.Contendor__Tarjetas {
+    width: 37.5rem;
+    height: 96.4rem;
+    margin: 7.7rem 4rem 0 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .Tarjeta {
+        @include ModeloCaja;
+
+        h2 {
+            margin: 2.8rem 0 0 3rem;
+            font-weight: 600;
+        }
+
+        p {
+            margin: 0.5rem 0 0 3rem;
+            font-weight: 200;
+            color: var(--Color_Grayish_Blue);
+        }
+
+        img {
+            width: 6rem;
+            height: 6.1rem;
+            margin-top: 1.7rem;
+            margin-left: 22.2rem;
+        }
+    }
+
+    .Tarjeta--1 {
+        border-top: .4rem solid var(--Color_Primary_Cyan);
+    }
+
+    .Tarjeta--2 {
+        border-top: .4rem solid var(--Color_Primary_Red);
+    }
+
+    .Tarjeta--3 {
+        border-top: .4rem solid var(--Color_Primary_Orange);
+    }
+
+    .Tarjeta--4 {
+        border-top: .4rem solid var(--Color_Primary_Blue);
+    }
+}
+
+@media screen and (min-width: 575px){
+
+    .Contendor__Tarjetas {
+        width: 66rem;
+        height: 50rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+    }
+
+
+}
+
+@media screen and (min-width: 768px){
+
+    .Contendor__Tarjetas {
+        width: 100rem;
+        height: 50rem;
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        'uno   dos1   tres'
+        'uno   dos2   tres'
+        ;
+    
+        .Tarjeta--1 {
+            grid-area: uno;
+        }
+
+        .Tarjeta--2 {
+            grid-area: dos1;
+        }
+        .Tarjeta--3 {
+            grid-area: dos2;
+        }
+        .Tarjeta--4 {
+            grid-area: tres;
+        }
+
+    }
+
+
+}

@@ -1,0 +1,20 @@
+
+html {
+    /*
+    ajuste para uso del rem 1 rem = 10px para tamaño de fuente
+    */
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+body {
+    /* ajuste tamaño de fuente*/
+    margin: 0;
+    padding: 0;
+    font-size: var(--TextSize);
+    font-family: var(--font);
+    color: var(----Color_Very_Light_Gray);
+}
+
+
